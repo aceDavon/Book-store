@@ -8,7 +8,7 @@ const NavBar = () => (
       <span className="text-xl lg:text-4xl text-blue-600 font-semibold">Bookstore CMS</span>
       <ul className="flex gap-8">
         <li>
-          <NavLink to="books" className="font-extralight text-slate-600 text-sm uppercase leading-3 tracking-wider">Books</NavLink>
+          <NavLink to="/" className="font-extralight text-slate-600 text-sm uppercase leading-3 tracking-wider">Books</NavLink>
         </li>
         <li>
           <NavLink to="category" className="font-extralight text-slate-600 text-sm uppercase leading-3 tracking-wider">Category</NavLink>
