@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Book Store
 
-## Available Scripts
+> This is an Educational project aimed at learning professional use of React/React-Redux. It features books management; Adding, Editing, Completing and Removing books from the system using Redux actions and reducers. This app is MIT Licensed
 
-In the project directory, you can run:
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- JavaScript
+- ReactJs, tailwindCSS
+- Git, GitHub, Git workflow
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live Demo (if available)
 
-### `npm test`
+[Coming soon](https://livedemo.com)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### To have a copy of this project running on your local machine, follow these commands:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Clone this repo to your local machine
+  -  `git clone git@github.com:aceDavon/book-store.git`
+  - Open the folder "Math-magician and run `npm install` to install all necesary scripts,
+  - Run from your termminal, `npm start` to open the project in your browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To get a local copy up and running follow these simple example steps.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [NodeJS](https://nodejs.org/en/docs/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep.
 
-## Learn More
+- [Text Editor(VScode Recommended)](https://code.visualstudio.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> Visual Studio Code is a free coding editor that helps you start coding quickly. Use it to code in any programming language, without switching editors.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Setup
 
-### Code Splitting
+**Run from your terminal:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `npx create-react-app todo-list-react`
 
-### Analyzing the Bundle Size
+**cd into math-magician folder, then run from your terminal:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- `npm start`
 
-### Making a Progressive Web App
+### Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**When the above commands aresuccessfully run, your browser should open on `localhost:3000`, if not, open your browser and load `127.0.0.1:3000` to see your default template loaded
 
-### Advanced Configuration
+### Run tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> coming soon :smile:
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+> coming soon :smile:
 
-### `npm run build` fails to minify
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👤 **Makoji David**
+
+- GitHub: [@aceDavon](https://github.com/aceDavon)
+- Twitter: [@sharkleshevon](https://twitter.com/sharkleshevon)
+- LinkedIn: [Makoji David](https://www.linkedin.com/in/david-makoji-b6090971/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
