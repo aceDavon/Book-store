@@ -22,14 +22,16 @@ html {
 }
 
 .outer {
-  box-shadow: 6px -6px 10px 2px rgba(209, 207, 207, 0.56),
-                -6px -6px -1px 2px rgba(209, 207, 207, 0.56);
+  box-shadow:
+    6px -6px 10px 2px rgba(209, 207, 207, 0.56),
+    -6px -6px -1px 2px rgba(209, 207, 207, 0.56);
 }
 
 .inner {
-  box-shadow: inset 4px 4px 6px 1px rgba(218, 216, 216, 0.39),
-                inset -4px -4px 6px -1px rgba(246, 241, 241, 0.313),
-                  -0.5px -0.5px 0px rgba(183, 181, 181, 0.812),
-                    0.5px 0.5px 0px rgba(238, 235, 235, 0.719),
-                     0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  box-shadow:
+    inset 4px 4px 6px 1px rgba(218, 216, 216, 0.39),
+    inset -4px -4px 6px -1px rgba(246, 241, 241, 0.313),
+    -0.5px -0.5px 0 rgba(183, 181, 181, 0.812),
+    0.5px 0.5px 0 rgba(238, 235, 235, 0.719),
+    0 12px 10px -10px rgba(0, 0, 0, 0.05);
 }

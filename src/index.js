@@ -4,6 +4,7 @@ import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import App from './App';
 import BookContainer from './components/BookContainer';
+import Category from './components/Category';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
       <Routes>
         <Route element={<App />} path="/">
           <Route element={<BookContainer />} index />
+          <Route element={<Category />} path="category" />
         </Route>
 
       </Routes>
