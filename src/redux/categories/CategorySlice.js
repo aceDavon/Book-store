@@ -9,4 +9,4 @@ const categoryReducer = (state = [], action) => {
   }
 };
 
-export bookstore/books/default categoryReducer;
+export default categoryReducer;
