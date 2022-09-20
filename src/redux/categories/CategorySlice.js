@@ -1,4 +1,4 @@
-export const checkStatus = 'CHECK_STATUS';
+export const checkStatus = 'bookstore/category/CHECK_STATUS';
 
 const categoryReducer = (state = [], action) => {
   switch (action.type) {
@@ -9,4 +9,4 @@ const categoryReducer = (state = [], action) => {
   }
 };
 
-export default categoryReducer;
+export bookstore/books/default categoryReducer;
