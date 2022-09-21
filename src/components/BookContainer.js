@@ -1,20 +1,23 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { allBooks, removeBook } from '../redux/books/BookSlice';
 import Book from './Book';
 import Form from './Form';
 
 const BookContainer = () => {
-  const [books] = React.useState([{
-    id: 1,
-    title: 'hunger games',
-    author: 'frank herbert',
-    category: 'science',
-  }]);
+  const books = useSelector(allBooks);
+  const dispatch = useDispatch();
+
+  const handleRemove = (id) => {
+    dispatch(removeBook(id));
+  };
+
   return (
     <div className="flex flex-col gap-4 py-10">
       {/* Books Card */}
       <div className="w-full">
-        {books.length > 0
-          && books.map((book) => {
+        {books.length > 0 ? (
+          books.map((book) => {
             const {
               id, title, author, category,
             } = book;
@@ -37,7 +40,7 @@ const BookContainer = () => {
                     </li>
                     <li className="w-2 text-gray-300">|</li>
                     <li>
-                      <button type="button" className="text-sm font-thin">
+                      <button type="button" className="text-sm font-thin" onClick={() => handleRemove(id)}>
                         Remove
                       </button>
                     </li>
@@ -78,7 +81,12 @@ const BookContainer = () => {
                 </div>
               </div>
             );
-          })}
+          })
+        ) : (
+          <p className="text-center text-white">
+            There are no books yet, please books to see them here
+          </p>
+        )}
       </div>
       {/* Form */}
       <Form />
