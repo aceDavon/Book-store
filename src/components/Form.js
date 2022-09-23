@@ -1,21 +1,23 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { addBook, allBooks } from '../redux/books/BookSlice';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { addData } from '../redux/books/BookSlice';
 import Setter from './setter';
 
 const Form = () => {
-  const { values, onchange } = Setter();
+  const { values, onchange, setValues } = Setter();
   const dispatch = useDispatch();
-  const books = useSelector(allBooks);
 
   const { title, author } = values;
   const handleSubmit = () => {
     const newBook = {
-      id: books.length + 1,
+      item_id: uuidv4(),
       title,
       author,
+      category: 'Trial',
     };
-    dispatch(addBook(newBook));
+    dispatch(addData(newBook));
+    setValues({ title: '', author: '' });
   };
   return (
     <form
@@ -28,6 +30,7 @@ const Form = () => {
       <input
         type="text"
         name="title"
+        value={title}
         className="w-5/12 p-2 border rounded mr-4 font-thin"
         placeholder="Enter book title"
         onChange={(e) => onchange(e)}
@@ -37,6 +40,7 @@ const Form = () => {
         className="w-4/12 p-2 border rounded mr-4 font-thin"
         placeholder="Enter book author"
         name="author"
+        value={author}
         onChange={(e) => onchange(e)}
       />
       <button
