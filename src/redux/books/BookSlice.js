@@ -22,7 +22,7 @@ export const removeData = createAsyncThunk('books/removeData', async (id) => {
       },
     }).then((res) => res.data);
   } catch (error) {
-    return console.log(error.message);
+    return error.message;
   }
 });
 
