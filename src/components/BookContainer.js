@@ -1,17 +1,20 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { allBooks, removeBook } from '../redux/books/BookSlice';
+import { allBooks, fetchData, removeData } from '../redux/books/BookSlice';
 import Book from './Book';
 import Form from './Form';
 
 const BookContainer = () => {
-  const books = useSelector(allBooks);
+  const { books, msg } = useSelector(allBooks);
   const dispatch = useDispatch();
 
   const handleRemove = (id) => {
-    dispatch(removeBook(id));
+    dispatch(removeData(id));
   };
 
+  React.useEffect(() => {
+    dispatch(fetchData());
+  }, [msg, dispatch]);
   return (
     <div className="flex flex-col gap-4 py-10">
       {/* Books Card */}
